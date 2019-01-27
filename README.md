@@ -5,7 +5,7 @@ Created on 01/27/2019
 Bikeshare - Calculate Statistcs
 
 ### Description
-Calculate Statistcs based on some inputs of ueser: City, month and day of week
+Calculate Statistcs based on some inputs of ueser: City, month and day of week.
 
 ### Files used
 Uses modules: time, pandas and numpy.
