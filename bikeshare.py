@@ -264,16 +264,16 @@ def get_lines(df):
     """
     msg1 = "Please, type a valid answer."
     see = 1
-    see_valid = [0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    see_valid = [0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50]
     try:
-        see = int(input("Would you like to see lines of data? Type from 5 to 20 lines. 0 is no. \n"))
+        see = int(input("Would you like to see lines of data? Type from 5 to 50 lines. 0 is no. \n"))
     except: 
         print (msg1)
     else:
         while  see not in see_valid:
             print (msg1)
             try:
-                see = int(input("Would you like to see lines of data? Type from 5 to 20 lines. 0 is no \n"))
+                see = int(input("Would you like to see lines of data? Type from 5 to 50 lines. 0 is no \n"))
             except:
                 print (msg1)
                 see = 1
@@ -376,10 +376,15 @@ def main():
         #df.info()
         
         time_stats(df)
+      #  x = str(input("Press any key to continue. \n"))
         station_stats(df)
+      #  x = str(input("Press any key to continue. \n"))
         trip_duration_stats(df)
+      #  x = str(input("Press any key to continue. \n"))
         user_stats(df, city)
+      #  x = str(input("Press any key to continue. \n"))
         get_lines(df)
+      #  x = str(input("Press any key to continue. \n"))
         get_numbers(df)
         #get_graph(df)
         
